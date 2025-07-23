@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title>Biotours</title>
+	<meta charset="utf-8" />
+	<link rel="shortcut icon" href="assets/media/logos/favicon.ico" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
+	<link href="assets/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
+	<link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+	<link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+	<link href="assets/css/custom-styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body id="kt_app_body" data-kt-app-header-fixed="true" data-kt-app-header-fixed-mobile="true"
+	data-kt-app-sidebar-enabled="true" data-kt-app-sidebar-fixed="false" data-kt-app-sidebar-push-header="true"
+	data-kt-app-sidebar-push-toolbar="true" data-kt-app-sidebar-push-footer="true" data-kt-app-toolbar-enabled="true"
+	class="app-default">
+	<!--begin::App-->
+	<div class="d-flex flex-column flex-root app-root" id="kt_app_root">
+		<!--begin::Page-->
+		<div class="app-page flex-column flex-column-fluid" id="kt_app_page">
+			<!--begin::Header-->
+			<div id="kt_app_header" class="app-header">
+				<!--begin::Header container-->
+				<div class="app-container container-fluid d-flex align-items-stretch justify-content-between bar"
+					id="kt_app_header_container">
+					<!--begin::Header logo-->
+					<div class="app-header-logo d-flex align-items-center me-lg-20 gap-1 gap-lg-2">
+						<!--begin::Logo image-->
+						<a href="./resenias.html">
+							<img alt="Logo" src="assets/media/logos/logo-biotours-transp.png" />
+						</a>
+						<!--end::Logo image-->
+						<!--begin::Mobile toggle-->
+						<div class="btn btn-icon btn-color-gray-500 btn-active-color-primary w-35px h-35px d-flex d-lg-none"
+							id="kt_app_header_menu_toggle">
+							<i class="ki-outline ki-abstract-14 lh-0 fs-1"></i>
+						</div>
+						<!--end::Mobile toggle-->
+					</div>
+					<!--end::Header logo-->
+					<!--begin::Header wrapper-->
+					<div class="d-flex align-items-stretch justify-content-between flex-lg-grow-1">
+						<!--begin::Menu wrapper-->
+						<div class="d-flex align-items-stretch" id="kt_app_header_menu_wrapper">
+							<!--begin::Menu holder-->
+							<div class="app-header-menu app-header-mobile-drawer align-items-stretch"
+								data-kt-drawer="true" data-kt-drawer-name="app-header-menu"
+								data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true"
+								data-kt-drawer-width="{default:'200px', '300px': '250px'}"
+								data-kt-drawer-direction="start" data-kt-drawer-toggle="#kt_app_header_menu_toggle"
+								data-kt-swapper="true" data-kt-swapper-mode="prepend"
+								data-kt-swapper-parent="{default: '#kt_app_body', lg: '#kt_app_header_menu_wrapper'}">
+								<!--begin::Menu-->
+								<div class="menu menu-rounded menu-column menu-lg-row menu-active-bg menu-title-gray-600 menu-state-gray-900 menu-arrow-gray-500 fw-semibold fw-semibold fs-6 align-items-stretch my-5 my-lg-0 px-2 px-lg-0"
+									id="#kt_app_header_menu" data-kt-menu="true">
+									<!--begin:Menu item-->
+									<div 
+										class="menu-item menu-here-bg menu-lg-down-accordion me-0 me-lg-2">
+										<!--begin:Menu link-->
+										<span class="menu-link">
+											<a href="./searchActivities.html">
+												<span class="menu-title" style="color: white;">Home</span>
+											</a>
+											<span class="menu-arrow d-lg-none"></span>
+										</span>
+										<!--end:Menu link-->
+									</div>
+									<!--end:Menu item-->
+									<!--end:Menu item-->
+								</div>
+								<!--end::Menu-->
+							</div>
+							<!--end::Menu holder-->
+						</div>
+						<!--end::Menu wrapper-->
+						<!--begin::Navbar-->
+						<div class="app-navbar flex-shrink-0 gap-2 gap-lg-5">
+
+
+							<!--begin::User menu-->
+							<div class="app-navbar-item ms-lg-5" id="kt_header_user_menu_toggle">
+								<!--begin::Menu wrapper-->
+								<div class="d-flex align-items-center"
+									data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-attach="parent"
+									data-kt-menu-placement="bottom-end">
+									<!--begin:Info-->
+									<div class="text-end d-none d-sm-flex flex-column justify-content-center me-3">
+										<span class="text-gray-500 fs-8 fw-bold">Hello</span>
+										<a href="pages/user-profile/overview.html"
+											class="text-gray-800 text-hover-primary fs-7 fw-bold d-block">Francisco</a>
+									</div>
+									<!--end:Info-->
+									<!--begin::User-->
+									<div class="cursor-pointer symbol symbol symbol-circle symbol-35px symbol-md-40px">
+										<img class="" src="assets/media/avatars/300-32.jpeg" alt="user" />
+										<div
+											class="position-absolute translate-middle bottom-0 mb-1 start-100 ms-n1 bg-success rounded-circle h-8px w-8px">
+										</div>
+									</div>
+									<!--end::User-->
+								</div>
+								<!--begin::User account menu-->
+								<div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg menu-state-color fw-semibold py-4 fs-6 w-275px"
+									data-kt-menu="true">
+									<!--begin::Menu item-->
+									<div class="menu-item px-3">
+										<div class="menu-content d-flex align-items-center px-3">
+											<!--begin::Avatar-->
+											<div class="symbol symbol-50px me-5">
+												<img alt="Logo" src="assets/media/avatars/300-32.jpeg" />
+											</div>
+											<!--end::Avatar-->
+											<!--begin::Username-->
+											<div class="d-flex flex-column">
+												<div class="fw-bold d-flex align-items-center fs-5">Francisco
+													<span
+														class="badge badge-light-success fw-bold fs-8 px-2 py-1 ms-2">Pro</span>
+												</div>
+												<a href="#"
+													class="fw-semibold text-muted text-hover-primary fs-7">ethan@kt.com</a>
+											</div>
+											<!--end::Username-->
+										</div>
+									</div>
+									<!--end::Menu item-->
+									<!--begin::Menu separator-->
+									<div class="separator my-2"></div>
+									<!--end::Menu separator-->
+									<!--begin::Menu item-->
+									<div class="menu-item px-5">
+										<a href="profile.html" class="menu-link px-5">Mi Perfil</a>
+									</div>
+									<!--end::Menu item-->
+									<!--begin::Menu separator-->
+									<div class="separator my-2"></div>
+									<!--end::Menu item-->
+									<!--begin::Menu item-->
+									<div class="menu-item px-5">
+										<a href="./index.html"
+											class="menu-link px-5">Cerrar Sesión</a>
+									</div>
+									<!--end::Menu item-->
+								</div>
+								<!--end::User account menu-->
+								<!--end::Menu wrapper-->
+							</div>
+							<!--end::User menu-->
+							<!--begin::Sidebar menu toggle-->
+							<div class="app-navbar-item d-flex align-items-center d-lg-none me-n2">
+								<a href="#"
+									class="btn btn-icon btn-color-gray-500 btn-active-color-primary w-35px h-35px"
+									id="kt_app_sidebar_mobile_toggle">
+									<i class="ki-outline ki-row-vertical fs-1"></i>
+								</a>
+							</div>
+							<!--end::Sidebar menu toggle-->
+						</div>
+						<!--end::Navbar-->
+					</div>
+					<!--end::Header wrapper-->
+				</div>
+				<!--end::Header container-->
+			</div>
+			<!--end::Header-->
+			<!--begin::Wrapper-->
+			<div class="app-wrapper d-flex flex-column flex-column-fluid" id="kt_app_wrapper">
+				<!--begin::Wrapper container-->
+				<div class="app-container container-fluid d-flex flex-row-fluid">
+					<!--begin::Sidebar-->
+					<div id="kt_app_sidebar" class="app-sidebar flex-column" data-kt-drawer="true"
+						data-kt-drawer-name="app-sidebar" data-kt-drawer-activate="{default: true, lg: false}"
+						data-kt-drawer-overlay="true" data-kt-drawer-width="auto" data-kt-drawer-direction="start"
+						data-kt-drawer-toggle="#kt_app_sidebar_mobile_toggle">
+					</div>
+					<!--end::Sidebar-->
+					<!--begin::Main-->
+					<div class="app-main flex-column flex-row-fluid" id="kt_app_main">
+						<!--begin::Content wrapper-->
+						<div class="d-flex flex-column flex-column-fluid">
+							<!--begin::Toolbar-->
+							<div id="kt_app_toolbar" class="app-toolbar pt-7 pt-lg-10">
+								<!--begin::Toolbar wrapper-->
+								<div class="app-toolbar-wrapper d-flex flex-stack flex-wrap gap-4 w-100">
+									<!--begin::Page title-->
+									<div class="page-title d-flex flex-column justify-content-center gap-1 me-3">
+										<!--begin::Breadcrumb-->
+										<ul class="breadcrumb breadcrumb-separatorless fw-semibold fs-7">
+											<!--begin::Item-->
+											<li class="breadcrumb-item text-gray-700 fw-bold lh-1 mx-n1">
+												<a href="index.html" class="text-hover-primary">
+													<i class="ki-outline ki-home text-gray-700 fs-6"></i>
+												</a>
+											</li>
+											<!--end::Item-->
+											<!--begin::Item-->
+											<li class="breadcrumb-item">
+												<i class="ki-outline ki-right fs-7 text-gray-700"></i>
+											</li>
+											<!--end::Item-->
+
+										</ul>
+										<!--end::Breadcrumb-->
+										<!--begin::Title-->
+										<h1
+											class="page-heading d-flex flex-column justify-content-center text-gray-900 fw-bolder fs-3 m-0">
+											Feed Principal</h1>
+										<!--end::Title-->
+									</div>
+									<!--end::Page title-->
+
+								</div>
+								<!--end::Toolbar wrapper-->
+							</div>
+							<!--end::Toolbar-->
+							<!--begin::Content-->
+							<div id="kt_app_content" class="app-content flex-column-fluid">
+								<!--begin::Social - Feeds -->
+								<div class="d-flex flex-row">
+									<!--begin::Start sidebar-->
+									<div class="d-lg-flex flex-column flex-lg-row-auto w-lg-325px" data-kt-drawer="true"
+										data-kt-drawer-name="start-sidebar"
+										data-kt-drawer-activate="{default: true, lg: false}"
+										data-kt-drawer-overlay="true"
+										data-kt-drawer-width="{default:'200px', '250px': '300px'}"
+										data-kt-drawer-direction="start"
+										data-kt-drawer-toggle="#kt_social_start_sidebar_toggle">
+										<!--begin::User menu-->
+										<div class="card mb-5 mb-xl-8">
+											<!--begin::Body-->
+											<div class="card-body pt-15 px-0">
+												<!--begin::Member-->
+												<div class="d-flex flex-column text-center mb-9 px-9">
+													<!--begin::Photo-->
+													<div class="symbol symbol-80px symbol-lg-150px mb-4">
+														<img src="assets/media/avatars/300-32.jpeg" class="" alt="" />
+													</div>
+													<!--end::Photo-->
+													<!--begin::Info-->
+													<div class="text-center">
+														<!--begin::Name-->
+														<a href="pages/user-profile/overview.html"
+															class="text-gray-800 fw-bold text-hover-primary fs-4">Francisco Jimenez</a>
+														<!--end::Name-->
+														<!--begin::Position-->
+														<span class="text-muted d-block fw-semibold">Fotógrafo</span>
+														<!--end::Position-->
+													</div>
+													<!--end::Info-->
+												</div>
+												<!--end::Member-->
+												<!--begin::Row-->
+												<div class="row px-9 mb-4">
+													<!--begin::Col-->
+													<div class="col-md-4 text-center">
+														<div class="text-gray-800 fw-bold fs-3">
+															<i class="ki-outline ki-arrow-up fs-3 text-success me-2"></i>
+															<span class="m-0" data-kt-countup="true"
+																data-kt-countup-value="45">0</span>
+														</div>
+														<span class="text-gray-500 fs-8 d-block fw-bold">Reseñas</span>
+													</div>
+													<!--end::Col-->
+													<!--begin::Col-->
+													<div class="col-md-4 text-center">
+														<div class="text-gray-800 fw-bold fs-3">
+															<span class="m-0" data-kt-countup="true"
+																data-kt-countup-value="8">0</span>
+														</div>
+														<i class="ki-outline ki-arrow-down fs-3 text-danger me-2"></i>
+														<span
+															class="text-gray-500 fs-8 d-block fw-bold">Reseñas</span>
+													</div>
+													<!--end::Col-->
+													<!--begin::Col-->
+													<div class="col-md-4 text-center">
+														<div class="text-gray-800 fw-bold fs-3">
+															<span class="m-0" data-kt-countup="true"
+																data-kt-countup-value="53">0</span>
+														</div>
+														<span
+															class="text-gray-500 fs-8 d-block fw-bold">Total de reseñas</span>
+													</div>
+													<!--end::Col-->
+												</div>
+												<!--end::Row-->
+												<!--begin::Navbar-->
+												<div class="m-0">
+													<!--begin::Navs-->
+													<ul
+														class="nav nav-pills nav-pills-custom flex-column border-transparent fs-5 fw-bold">
+														<!--begin::Nav item-->
+														
+														<!--end::Nav item-->
+														<!--begin::Nav item-->
+														<li class="nav-item mt-5">
+															<a class="nav-link text-muted text-active-primary ms-0 py-0 me-10 ps-9 border-0"
+																href="profile.html">
+																<i
+																	class="ki-outline ki-chart-simple-2 fs-3 text-muted me-3"></i>Perfil
+																<!--begin::Bullet-->
+																<span
+																	class="bullet-custom position-absolute start-0 top-0 w-3px h-100 bg-primary rounded-end"></span>
+																<!--end::Bullet--></a>
+														</li>
+														<!--end::Nav item-->
+														<!--begin::Nav item-->
+														<li class="nav-item mt-5">
+															<a class="nav-link text-muted text-active-primary ms-0 py-0 me-10 ps-9 border-0 active"
+																href="">
+																<i
+																	class="ki-outline ki-profile-circle fs-3 text-muted me-3"></i>Reseñas
+																<!--begin::Bullet-->
+																<span
+																	class="bullet-custom position-absolute start-0 top-0 w-3px h-100 bg-primary rounded-end"></span>
+																<!--end::Bullet--></a>
+														</li>
+														<!--end::Nav item-->
+														<!--begin::Nav item-->
+														<li class="nav-item mt-5">
+															<a class="nav-link text-muted text-active-primary ms-0 py-0 me-10 ps-9 border-0"
+																href="searchActivities.html">
+																<i
+																	class="ki-outline ki-setting-2 fs-3 text-muted me-3"></i>Buscador de Experiencias
+																<!--begin::Bullet-->
+																<span
+																	class="bullet-custom position-absolute start-0 top-0 w-3px h-100 bg-primary rounded-end"></span>
+																<!--end::Bullet--></a>
+														</li>
+														<!--end::Nav item-->
+													</ul>
+													<!--begin::Navs-->
+												</div>
+												<!--end::Navbar-->
+											</div>
+											<!--end::Body-->
+										</div>
+
+
+
+
+										
+										<!--end::User menu-->
+									</div>
+									<!--end::Start sidebar-->
+									<!--begin::Content-->
+									<div class="w-100 flex-lg-row-fluid mx-lg-13">
+										<!--begin::Mobile toolbar-->
+										<div class="d-flex d-lg-none align-items-center justify-content-end mb-10">
+											<div class="d-flex align-items-center gap-2">
+												<div class="btn btn-icon btn-active-color-primary w-30px h-30px"
+													id="kt_social_start_sidebar_toggle">
+													<i class="ki-outline ki-profile-circle fs-1"></i>
+												</div>
+												<div class="btn btn-icon btn-active-color-primary w-30px h-30px"
+													id="kt_social_end_sidebar_toggle">
+													<i class="ki-outline ki-scroll fs-1"></i>
+												</div>
+											</div>
+										</div>
+										<!--end::Mobile toolbar-->
+										<!--begin::Posts-->
+										<div class="mb-10" id="kt_social_feeds_posts">
+											<!--begin::Reseñas detalladas-->
+<div class="card mb-10">
+    <div class="card-header border-0 pt-5">
+        <h3 class="card-title fw-bold text-dark">Reseñas de Francisco Andrés Puello Jiménez</h3>
+        <div class="card-toolbar">
+            <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#kt_modal_add_review">
+                + Agregar reseña
+            </button>
+        </div>
+    </div>
+
+    <div class="card-body pt-5">
+
+		<!--begin::Reseña Matute Birding-->
+		<div class="card card-flush mb-10">
+			<div class="card-body">
+				<h4 class="fw-bold text-dark mb-2">Reseña de Matute Birding Nature Reserve</h4>
+				<div class="text-muted mb-2">Reseña por: Francisco Andrés Puello Jiménez</div>
+				<div class="text-muted mb-2">Destino visitado: Matute Birding Nature Reserve – Cartagena de Indias, Colombia</div>
+				<div class="text-muted mb-2">Fecha de visita: Julio de 2025</div>
+				<div class="mb-4">
+					<span class="badge badge-light-success">⭐⭐⭐⭐⭐ (5/5)</span>
+				</div>
+				<img src="assets/media/products/bird.png" class="img-fluid rounded mb-4" alt="Matute Birding Nature Reserve">
+				<p class="fs-6 text-gray-700">
+					“Una joya escondida para los amantes de la naturaleza y la historia”<br><br>
+					¡Qué experiencia tan increíble fue visitar la reserva Matute Birding! Desde el momento en que llegamos, se sintió como un viaje en el tiempo y en el espacio… ¡a un bosque seco tropical lleno de vida! Esta reserva natural está ubicada a solo 15 minutos de Cartagena, pero parece otro mundo. Son tierras históricas donde alguna vez caminó Alexander Von Humboldt, y ahora uno puede recorrerlas guiado por expertos que realmente aman lo que hacen.<br><br>
+					La actividad de avistamiento de aves fue lo más destacado del día. Caminamos por senderos entre bosque seco y galería, y logramos ver más de 40 especies distintas en una sola jornada. ¡Todo con el acompañamiento de un guía biólogo especializado que nos enseñó a reconocer cantos, hábitos y hasta comportamientos únicos! Me sorprendió saber que tienen más de 130 especies registradas y aparecen en 91 listas de eBird. ¡Un paraíso ornitológico!<br><br>
+					La experiencia incluye transporte cómodo desde Cartagena, alimentación deliciosa y la tranquilidad de saber que estás apoyando un proyecto de conservación real. El entorno es limpio, bien cuidado y se nota el compromiso ambiental en cada detalle.<br><br>
+					Recomiendo esta reserva a todos los viajeros que quieran conectar con la biodiversidad de una forma auténtica y responsable. ¡Gracias Matute Birding y gracias Biotours App por ayudarme a encontrar esta experiencia inolvidable!
+				</p>
+				<div class="d-flex align-items-center gap-2 mb-3">
+					<div class="d-flex align-items-center mb-3">
+						<button class="btn btn-light btn-sm dropdown-toggle" data-bs-toggle="dropdown">Reaccionar</button>
+						<ul class="dropdown-menu">
+						  <li><a class="dropdown-item reaction-btn" data-type="like" href="#">👍 Me gusta</a></li>
+						  <li><a class="dropdown-item reaction-btn" data-type="love" href="#">❤️ Me encanta</a></li>
+						  <li><a class="dropdown-item reaction-btn" data-type="wow" href="#">😮 Sorprendido</a></li>
+						  <li><a class="dropdown-item reaction-btn" data-type="sad" href="#">😢 Triste</a></li>
+						</ul>
+						<div class="ms-3 small">
+						  👍 <span class="like-count">1</span> · ❤️ <span class="love-count">10</span> · 😮 <span class="wow-count">0</span> · 😢 <span class="sad-count">0</span>
+						</div>
+					  </div>
+				</div>
+				<div class="card-footer pt-0">
+					<div class="separator separator-solid"></div>
+					<ul class="nav py-3">
+						<li class="nav-item">
+							<a class="nav-link btn btn-sm btn-color-gray-600 fw-bold" data-bs-toggle="collapse" href="#comentariosResena1">
+								<i class="bi bi-chat-left-text"></i> 2 Comentarios
+							</a>
+						</li>
+					</ul>
+					<div class="separator separator-solid mb-1"></div>
+		
+					<div class="collapse show" id="comentariosResena1">
+						<!-- Comentario ejemplo -->
+						<div class="d-flex pt-6">
+							<div class="symbol symbol-45px me-5">
+								<img src="assets/media/avatars/300-13.jpg" alt="" />
+							</div>
+							<div class="d-flex flex-column flex-row-fluid">
+								<div class="d-flex align-items-center flex-wrap mb-0">
+									<a href="#" class="text-gray-800 fw-bold me-6">Mr. Anderson</a>
+									<span class="text-gray-500 fs-7 me-5">1 día atrás</span>
+								</div>
+								<span class="text-gray-800 fs-7 fw-normal pt-1">
+									¡Excelente reseña! Me dieron ganas de visitar la reserva.
+								</span>
+								<!-- Reacciones al comentario -->
+								<div class="mt-2">
+									<button onclick="reactComment('c1-like')" class="btn btn-sm btn-light-primary">👍</button>
+									<button onclick="reactComment('c1-love')" class="btn btn-sm btn-light-danger">❤️</button>
+									<button onclick="reactComment('c1-sad')" class="btn btn-sm btn-light-warning">😢</button>
+									<div>
+										<span>👍 <span id="c1-like">0</span></span>
+										<span>❤️ <span id="c1-love">0</span></span>
+										<span>😢 <span id="c1-sad">0</span></span>
+									</div>
+								</div>
+							</div>
+						</div>
+		
+						<!-- Comentario 2 -->
+						<div class="d-flex pt-6">
+							<div class="symbol symbol-45px me-5">
+								<img src="assets/media/avatars/300-2.jpg" alt="" />
+							</div>
+							<div class="d-flex flex-column flex-row-fluid">
+								<div class="d-flex align-items-center flex-wrap mb-0">
+									<a href="#" class="text-gray-800 fw-bold me-6">María López</a>
+									<span class="text-gray-500 fs-7 me-5">3 días atrás</span>
+								</div>
+								<span class="text-gray-800 fs-7 fw-normal pt-1">
+									¡Qué bonito lugar! Gracias por compartir la experiencia.
+								</span>
+								<!-- Reacciones al comentario -->
+								<div class="mt-2">
+									<button onclick="reactComment('c2-like')" class="btn btn-sm btn-light-primary">👍</button>
+									<button onclick="reactComment('c2-love')" class="btn btn-sm btn-light-danger">❤️</button>
+									<button onclick="reactComment('c2-sad')" class="btn btn-sm btn-light-warning">😢</button>
+									<div>
+										<span>👍 <span id="c2-like">0</span></span>
+										<span>❤️ <span id="c2-love">0</span></span>
+										<span>😢 <span id="c2-sad">0</span></span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+		
+					<!-- Nuevo comentario -->
+					<div class="d-flex align-items-center mt-5">
+						<div class="symbol symbol-35px me-3">
+							<img src="assets/media/avatars/300-3.jpg" alt="" />
+						</div>
+						<div class="position-relative w-100">
+							<textarea class="form-control form-control-solid border ps-5" rows="1" placeholder="Escribe un comentario..."></textarea>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<!--end::Reseña Matute Birding-->
+	
+		<!--begin::Reseña Sembrando Paz-->
+		<div class="card card-flush mb-10">
+			<div class="card-body">
+				<h4 class="fw-bold text-dark mb-2">Reseña de Sembrando Paz</h4>
+				<div class="text-muted mb-2">Reseña por: Francisco Andrés Puello Jiménez</div>
+				<div class="text-muted mb-2">Destino visitado: Senderismo en los Montes de María</div>
+				<div class="text-muted mb-2">Fecha de visita: Junio de 2025</div>
+				<div class="mb-4">
+					<span class="badge badge-light-success">⭐⭐⭐⭐⭐ (5/5)</span>
+				</div>
+				<img src="assets/media/products/senderismo.jpg" class="img-fluid rounded mb-4" alt="Senderismo Montes de María">
+				<p class="fs-6 text-gray-700">
+					“Naturaleza, historia y cultura en cada paso”<br><br>
+					Explorar los Montes de María fue una experiencia enriquecedora. Desde el inicio, los guías de Sembrando Paz nos hicieron sentir parte de la comunidad. Durante el recorrido, aprendimos sobre la historia resiliente de estas tierras y su biodiversidad única. Los senderos son seguros y adecuados para cualquier edad.<br><br>
+					Destaco el almuerzo campesino con productos locales: simple pero delicioso. Además, el compromiso social del proyecto, que trabaja con comunidades que antes sufrieron el conflicto armado, me dejó conmovido.<br><br>
+					Si buscas un turismo responsable y transformador, recomiendo 100% esta experiencia.
+				</p>
+				<div class="d-flex align-items-center gap-2 mb-3">
+					<div class="d-flex align-items-center mb-3">
+						<button class="btn btn-light btn-sm dropdown-toggle" data-bs-toggle="dropdown">Reaccionar</button>
+						<ul class="dropdown-menu">
+						  <li><a class="dropdown-item reaction-btn" data-type="like" href="#">👍 Me gusta</a></li>
+						  <li><a class="dropdown-item reaction-btn" data-type="love" href="#">❤️ Me encanta</a></li>
+						  <li><a class="dropdown-item reaction-btn" data-type="wow" href="#">😮 Sorprendido</a></li>
+						  <li><a class="dropdown-item reaction-btn" data-type="sad" href="#">😢 Triste</a></li>
+						</ul>
+						<div class="ms-3 small">
+						  👍 <span class="like-count">1</span> · ❤️ <span class="love-count">100</span> · 😮 <span class="wow-count">0</span> · 😢 <span class="sad-count">0</span>
+						</div>
+					  </div>
+				</div>
+				<div class="card-footer pt-0">
+					<div class="separator separator-solid"></div>
+					<ul class="nav py-3">
+						<li class="nav-item">
+							<a class="nav-link btn btn-sm btn-color-gray-600 fw-bold" data-bs-toggle="collapse" href="#comentariosResena2">
+								<i class="bi bi-chat-left-text"></i> 2 Comentarios
+							</a>
+						</li>
+					</ul>
+					<div class="separator separator-solid mb-1"></div>
+		
+					<div class="collapse show" id="comentariosResena2">
+						<!-- Comentario ejemplo -->
+						<div class="d-flex pt-6">
+							<div class="symbol symbol-45px me-5">
+								<img src="assets/media/avatars/300-13.jpg" alt="" />
+							</div>
+							<div class="d-flex flex-column flex-row-fluid">
+								<div class="d-flex align-items-center flex-wrap mb-0">
+									<a href="#" class="text-gray-800 fw-bold me-6">Mr. Anderson</a>
+									<span class="text-gray-500 fs-7 me-5">1 día atrás</span>
+								</div>
+								<span class="text-gray-800 fs-7 fw-normal pt-1">
+									¡Excelente reseña! Me dieron ganas de visitar la reserva.
+								</span>
+								<!-- Reacciones al comentario -->
+								<div class="mt-2">
+									<button onclick="reactComment('c1-like')" class="btn btn-sm btn-light-primary">👍</button>
+									<button onclick="reactComment('c1-love')" class="btn btn-sm btn-light-danger">❤️</button>
+									<button onclick="reactComment('c1-sad')" class="btn btn-sm btn-light-warning">😢</button>
+									<div>
+										<span>👍 <span id="c1-like">0</span></span>
+										<span>❤️ <span id="c1-love">0</span></span>
+										<span>😢 <span id="c1-sad">0</span></span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+		
+					<!-- Nuevo comentario -->
+					<div class="d-flex align-items-center mt-5">
+						<div class="symbol symbol-35px me-3">
+							<img src="assets/media/avatars/300-3.jpg" alt="" />
+						</div>
+						<div class="position-relative w-100">
+							<textarea class="form-control form-control-solid border ps-5" rows="1" placeholder="Escribe un comentario..."></textarea>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--end::Reseña Sembrando Paz-->
+	
+		<!--begin::Reseña Cartagena Biotours-->
+		<div class="card card-flush mb-10">
+			<div class="card-body">
+				<h4 class="fw-bold text-dark mb-2">Reseña de Cartagena Biotours</h4>
+				<div class="text-muted mb-2">Reseña por: Francisco Andrés Puello Jiménez</div>
+				<div class="text-muted mb-2">Destino visitado: Siembra Manglar – Cartagena de Indias</div>
+				<div class="text-muted mb-2">Fecha de visita: Mayo de 2025</div>
+				<div class="mb-4">
+					<span class="badge badge-light-success">⭐⭐⭐⭐⭐ (5/5)</span>
+				</div>
+				<img src="assets/media/products/siembraManglar.jpg" class="img-fluid rounded mb-4" alt="Siembra Manglar">
+				<p class="fs-6 text-gray-700">
+					“Sembrar manglar es sembrar futuro”<br><br>
+					Participar en la actividad de Siembra Manglar fue gratificante. Nos explicaron cómo los manglares protegen las costas y absorben carbono. Luego, con nuestras propias manos, plantamos pequeñas plántulas que ayudarán a conservar este ecosistema.<br><br>
+					La experiencia incluyó un paseo en lancha, avistamiento de aves y cangrejos, y una charla educativa. El equipo de Cartagena Biotours demuestra profesionalismo y amor por la naturaleza.<br><br>
+					Recomiendo esta actividad para quienes deseen viajar y contribuir al planeta al mismo tiempo.
+				</p>
+				<div class="d-flex align-items-center gap-2 mb-3">
+					<div class="d-flex align-items-center mb-3">
+						<button class="btn btn-light btn-sm dropdown-toggle" data-bs-toggle="dropdown">Reaccionar</button>
+						<ul class="dropdown-menu">
+						  <li><a class="dropdown-item reaction-btn" data-type="like" href="#">👍 Me gusta</a></li>
+						  <li><a class="dropdown-item reaction-btn" data-type="love" href="#">❤️ Me encanta</a></li>
+						  <li><a class="dropdown-item reaction-btn" data-type="wow" href="#">😮 Sorprendido</a></li>
+						  <li><a class="dropdown-item reaction-btn" data-type="sad" href="#">😢 Triste</a></li>
+						</ul>
+						<div class="ms-3 small">
+						  👍 <span class="like-count">1</span> · ❤️ <span class="love-count">10</span> · 😮 <span class="wow-count">0</span> · 😢 <span class="sad-count">0</span>
+						</div>
+					  </div>
+				</div>
+				<div class="card-footer pt-0">
+					<div class="separator separator-solid"></div>
+					<ul class="nav py-3">
+						<li class="nav-item">
+							<a class="nav-link btn btn-sm btn-color-gray-600 fw-bold" data-bs-toggle="collapse" href="#comentariosResena3">
+								<i class="bi bi-chat-left-text"></i> 2 Comentarios
+							</a>
+						</li>
+					</ul>
+					<div class="separator separator-solid mb-1"></div>
+		
+					<div class="collapse show" id="comentariosResena3">
+						<!-- Comentario ejemplo -->
+						<div class="d-flex pt-6">
+							<div class="symbol symbol-45px me-5">
+								<img src="assets/media/avatars/300-13.jpg" alt="" />
+							</div>
+							<div class="d-flex flex-column flex-row-fluid">
+								<div class="d-flex align-items-center flex-wrap mb-0">
+									<a href="#" class="text-gray-800 fw-bold me-6">Mr. Anderson</a>
+									<span class="text-gray-500 fs-7 me-5">1 día atrás</span>
+								</div>
+								<span class="text-gray-800 fs-7 fw-normal pt-1">
+									¡Excelente reseña! Me dieron ganas de visitar la reserva.
+								</span>
+								<!-- Reacciones al comentario -->
+								<div class="mt-2">
+									<button onclick="reactComment('c1-like')" class="btn btn-sm btn-light-primary">👍</button>
+									<button onclick="reactComment('c1-love')" class="btn btn-sm btn-light-danger">❤️</button>
+									<button onclick="reactComment('c1-sad')" class="btn btn-sm btn-light-warning">😢</button>
+									<div>
+										<span>👍 <span id="c1-like">0</span></span>
+										<span>❤️ <span id="c1-love">0</span></span>
+										<span>😢 <span id="c1-sad">0</span></span>
+									</div>
+								</div>
+							</div>
+						</div>
+		
+						<!-- Comentario 2 -->
+						<div class="d-flex pt-6">
+							<div class="symbol symbol-45px me-5">
+								<img src="assets/media/avatars/300-2.jpg" alt="" />
+							</div>
+							<div class="d-flex flex-column flex-row-fluid">
+								<div class="d-flex align-items-center flex-wrap mb-0">
+									<a href="#" class="text-gray-800 fw-bold me-6">María López</a>
+									<span class="text-gray-500 fs-7 me-5">3 días atrás</span>
+								</div>
+								<span class="text-gray-800 fs-7 fw-normal pt-1">
+									¡Qué bonito lugar! Gracias por compartir la experiencia.
+								</span>
+								<!-- Reacciones al comentario -->
+								<div class="mt-2">
+									<button onclick="reactComment('c2-like')" class="btn btn-sm btn-light-primary">👍</button>
+									<button onclick="reactComment('c2-love')" class="btn btn-sm btn-light-danger">❤️</button>
+									<button onclick="reactComment('c2-sad')" class="btn btn-sm btn-light-warning">😢</button>
+									<div>
+										<span>👍 <span id="c2-like">0</span></span>
+										<span>❤️ <span id="c2-love">0</span></span>
+										<span>😢 <span id="c2-sad">0</span></span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+		
+					<!-- Nuevo comentario -->
+					<div class="d-flex align-items-center mt-5">
+						<div class="symbol symbol-35px me-3">
+							<img src="assets/media/avatars/300-3.jpg" alt="" />
+						</div>
+						<div class="position-relative w-100">
+							<textarea class="form-control form-control-solid border ps-5" rows="1" placeholder="Escribe un comentario..."></textarea>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--end::Reseña Cartagena Biotours-->
+	
+		<!--begin::Reseña Restaurante Ecolele-->
+		<div class="card card-flush mb-10">
+			<div class="card-body">
+				<h4 class="fw-bold text-dark mb-2">Reseña de Restaurante Ecolele</h4>
+				<div class="text-muted mb-2">Reseña por: Francisco Andrés Puello Jiménez</div>
+				<div class="text-muted mb-2">Destino visitado: Restaurante Ecolele</div>
+				<div class="text-muted mb-2">Fecha de visita: Abril de 2025</div>
+				<div class="mb-4">
+					<span class="badge badge-light-success">⭐⭐⭐⭐⭐ (5/5)</span>
+				</div>
+				<img src="assets/media/products/eco.webp" class="img-fluid rounded mb-4" alt="Restaurante Ecolele">
+				<p class="fs-6 text-gray-700">
+					“Sabores auténticos en un ambiente natural”<br><br>
+					En Ecolele descubrí cómo la cocina campesina puede convertirse en alta cocina. Probé platos elaborados con ingredientes locales: pescados frescos, tubérculos nativos y frutas exóticas, todo preparado con técnicas tradicionales.<br><br>
+					El restaurante está rodeado de jardines, con un ambiente rústico y relajante. La atención fue impecable, explicándonos cada plato y su historia.<br><br>
+					Si quieres saborear Colombia de una manera sostenible y auténtica, Ecolele es una parada obligatoria.
+				</p>
+				<div class="d-flex align-items-center gap-2 mb-3">
+					<div class="d-flex align-items-center mb-3">
+						<button class="btn btn-light btn-sm dropdown-toggle" data-bs-toggle="dropdown">Reaccionar</button>
+						<ul class="dropdown-menu">
+						  <li><a class="dropdown-item reaction-btn" data-type="like" href="#">👍 Me gusta</a></li>
+						  <li><a class="dropdown-item reaction-btn" data-type="love" href="#">❤️ Me encanta</a></li>
+						  <li><a class="dropdown-item reaction-btn" data-type="wow" href="#">😮 Sorprendido</a></li>
+						  <li><a class="dropdown-item reaction-btn" data-type="sad" href="#">😢 Triste</a></li>
+						</ul>
+						<div class="ms-3 small">
+						  👍 <span class="like-count">1</span> · ❤️ <span class="love-count">10</span> · 😮 <span class="wow-count">0</span> · 😢 <span class="sad-count">0</span>
+						</div>
+					  </div>
+				</div>
+				<div class="card-footer pt-0">
+					<div class="separator separator-solid"></div>
+					<ul class="nav py-3">
+						<li class="nav-item">
+							<a class="nav-link btn btn-sm btn-color-gray-600 fw-bold" data-bs-toggle="collapse" href="#comentariosResena4">
+								<i class="bi bi-chat-left-text"></i> 2 Comentarios
+							</a>
+						</li>
+					</ul>
+					<div class="separator separator-solid mb-1"></div>
+		
+					<div class="collapse show" id="comentariosResena4">
+						<!-- Comentario ejemplo -->
+						<div class="d-flex pt-6">
+							<div class="symbol symbol-45px me-5">
+								<img src="assets/media/avatars/300-13.jpg" alt="" />
+							</div>
+							<div class="d-flex flex-column flex-row-fluid">
+								<div class="d-flex align-items-center flex-wrap mb-0">
+									<a href="#" class="text-gray-800 fw-bold me-6">Mr. Anderson</a>
+									<span class="text-gray-500 fs-7 me-5">1 día atrás</span>
+								</div>
+								<span class="text-gray-800 fs-7 fw-normal pt-1">
+									¡Excelente reseña! Me dieron ganas de visitar la reserva.
+								</span>
+								<!-- Reacciones al comentario -->
+								<div class="mt-2">
+									<button onclick="reactComment('c1-like')" class="btn btn-sm btn-light-primary">👍</button>
+									<button onclick="reactComment('c1-love')" class="btn btn-sm btn-light-danger">❤️</button>
+									<button onclick="reactComment('c1-sad')" class="btn btn-sm btn-light-warning">😢</button>
+									<div>
+										<span>👍 <span id="c1-like">0</span></span>
+										<span>❤️ <span id="c1-love">0</span></span>
+										<span>😢 <span id="c1-sad">0</span></span>
+									</div>
+								</div>
+							</div>
+						</div>
+		
+						<!-- Comentario 2 -->
+						<div class="d-flex pt-6">
+							<div class="symbol symbol-45px me-5">
+								<img src="assets/media/avatars/300-2.jpg" alt="" />
+							</div>
+							<div class="d-flex flex-column flex-row-fluid">
+								<div class="d-flex align-items-center flex-wrap mb-0">
+									<a href="#" class="text-gray-800 fw-bold me-6">María López</a>
+									<span class="text-gray-500 fs-7 me-5">3 días atrás</span>
+								</div>
+								<span class="text-gray-800 fs-7 fw-normal pt-1">
+									¡Qué bonito lugar! Gracias por compartir la experiencia.
+								</span>
+								<!-- Reacciones al comentario -->
+								<div class="mt-2">
+									<button onclick="reactComment('c2-like')" class="btn btn-sm btn-light-primary">👍</button>
+									<button onclick="reactComment('c2-love')" class="btn btn-sm btn-light-danger">❤️</button>
+									<button onclick="reactComment('c2-sad')" class="btn btn-sm btn-light-warning">😢</button>
+									<div>
+										<span>👍 <span id="c2-like">0</span></span>
+										<span>❤️ <span id="c2-love">0</span></span>
+										<span>😢 <span id="c2-sad">0</span></span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+		
+					<!-- Nuevo comentario -->
+					<div class="d-flex align-items-center mt-5">
+						<div class="symbol symbol-35px me-3">
+							<img src="assets/media/avatars/300-3.jpg" alt="" />
+						</div>
+						<div class="position-relative w-100">
+							<textarea class="form-control form-control-solid border ps-5" rows="1" placeholder="Escribe un comentario..."></textarea>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--end::Reseña Restaurante Ecolele-->
+	
+		<!--begin::Reseña Transporte Ecodrive-->
+		<div class="card card-flush mb-10">
+			<div class="card-body">
+				<h4 class="fw-bold text-dark mb-2">Reseña de Transporte Ecodrive</h4>
+				<div class="text-muted mb-2">Reseña por: Francisco Andrés Puello Jiménez</div>
+				<div class="text-muted mb-2">Destino visitado: Transporte Ecodrive</div>
+				<div class="text-muted mb-2">Fecha de visita: Marzo de 2025</div>
+				<div class="mb-4">
+					<span class="badge badge-light-success">⭐⭐⭐⭐⭐ (5/5)</span>
+				</div>
+				<img src="assets/media/products/carga-panel-solar.jpg" class="img-fluid rounded mb-4" alt="Transporte Ecodrive">
+				<p class="fs-6 text-gray-700">
+					“Viajar con conciencia ambiental”<br><br>
+					Utilizar Ecodrive fue una elección acertada. Sus vehículos eléctricos son cómodos, modernos y silenciosos. El trayecto desde el aeropuerto hasta nuestro hotel se sintió limpio y eficiente.<br><br>
+					Los conductores son profesionales y amables. Además, explican el impacto positivo del transporte eléctrico en la reducción de la huella de carbono.<br><br>
+					Ecodrive demuestra que es posible moverse de forma sostenible en Cartagena sin sacrificar calidad ni confort. ¡Totalmente recomendado!
+				</p>
+				<div class="d-flex align-items-center gap-2 mb-3">
+					<div class="d-flex align-items-center mb-3">
+						<button class="btn btn-light btn-sm dropdown-toggle" data-bs-toggle="dropdown">Reaccionar</button>
+						<ul class="dropdown-menu">
+						  <li><a class="dropdown-item reaction-btn" data-type="like" href="#">👍 Me gusta</a></li>
+						  <li><a class="dropdown-item reaction-btn" data-type="love" href="#">❤️ Me encanta</a></li>
+						  <li><a class="dropdown-item reaction-btn" data-type="wow" href="#">😮 Sorprendido</a></li>
+						  <li><a class="dropdown-item reaction-btn" data-type="sad" href="#">😢 Triste</a></li>
+						</ul>
+						<div class="ms-3 small">
+						  👍 <span class="like-count">1</span> · ❤️ <span class="love-count">10</span> · 😮 <span class="wow-count">0</span> · 😢 <span class="sad-count">0</span>
+						</div>
+					  </div>
+				</div>
+				<div class="card-footer pt-0">
+					<div class="separator separator-solid"></div>
+					<ul class="nav py-3">
+						<li class="nav-item">
+							<a class="nav-link btn btn-sm btn-color-gray-600 fw-bold" data-bs-toggle="collapse" href="#comentariosResena5">
+								<i class="bi bi-chat-left-text"></i> 2 Comentarios
+							</a>
+						</li>
+					</ul>
+					<div class="separator separator-solid mb-1"></div>
+		
+					<div class="collapse show" id="comentariosResena5">
+						<!-- Comentario ejemplo -->
+						<div class="d-flex pt-6">
+							<div class="symbol symbol-45px me-5">
+								<img src="assets/media/avatars/300-13.jpg" alt="" />
+							</div>
+							<div class="d-flex flex-column flex-row-fluid">
+								<div class="d-flex align-items-center flex-wrap mb-0">
+									<a href="#" class="text-gray-800 fw-bold me-6">Mr. Anderson</a>
+									<span class="text-gray-500 fs-7 me-5">1 día atrás</span>
+								</div>
+								<span class="text-gray-800 fs-7 fw-normal pt-1">
+									¡Excelente reseña! Me dieron ganas de visitar la reserva.
+								</span>
+								<!-- Reacciones al comentario -->
+								<div class="mt-2">
+									<button onclick="reactComment('c1-like')" class="btn btn-sm btn-light-primary">👍</button>
+									<button onclick="reactComment('c1-love')" class="btn btn-sm btn-light-danger">❤️</button>
+									<button onclick="reactComment('c1-sad')" class="btn btn-sm btn-light-warning">😢</button>
+									<div>
+										<span>👍 <span id="c1-like">0</span></span>
+										<span>❤️ <span id="c1-love">0</span></span>
+										<span>😢 <span id="c1-sad">0</span></span>
+									</div>
+								</div>
+							</div>
+						</div>
+		
+						<!-- Comentario 2 -->
+						<div class="d-flex pt-6">
+							<div class="symbol symbol-45px me-5">
+								<img src="assets/media/avatars/300-2.jpg" alt="" />
+							</div>
+							<div class="d-flex flex-column flex-row-fluid">
+								<div class="d-flex align-items-center flex-wrap mb-0">
+									<a href="#" class="text-gray-800 fw-bold me-6">María López</a>
+									<span class="text-gray-500 fs-7 me-5">3 días atrás</span>
+								</div>
+								<span class="text-gray-800 fs-7 fw-normal pt-1">
+									¡Qué bonito lugar! Gracias por compartir la experiencia.
+								</span>
+								<!-- Reacciones al comentario -->
+								<div class="mt-2">
+									<button onclick="reactComment('c2-like')" class="btn btn-sm btn-light-primary">👍</button>
+									<button onclick="reactComment('c2-love')" class="btn btn-sm btn-light-danger">❤️</button>
+									<button onclick="reactComment('c2-sad')" class="btn btn-sm btn-light-warning">😢</button>
+									<div>
+										<span>👍 <span id="c2-like">0</span></span>
+										<span>❤️ <span id="c2-love">0</span></span>
+										<span>😢 <span id="c2-sad">0</span></span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+		
+					<!-- Nuevo comentario -->
+					<div class="d-flex align-items-center mt-5">
+						<div class="symbol symbol-35px me-3">
+							<img src="assets/media/avatars/300-3.jpg" alt="" />
+						</div>
+						<div class="position-relative w-100">
+							<textarea class="form-control form-control-solid border ps-5" rows="1" placeholder="Escribe un comentario..."></textarea>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--end::Reseña Transporte Ecodrive-->
+	
+	</div>
+	
+</div>
+<!--begin::Modal - Add Review-->
+<div class="modal fade" id="kt_modal_add_review" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered mw-650px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="fw-bold">Agregar nueva reseña</h2>
+                <div class="btn btn-icon btn-sm btn-active-icon-primary" data-bs-dismiss="modal">
+                    <i class="ki-outline ki-cross fs-1"></i>
+                </div>
+            </div>
+
+            <div class="modal-body">
+                <form class="form">
+                    <div class="mb-5">
+                        <label class="required form-label">Selecciona empresa</label>
+                        <select class="form-select form-select-solid" name="empresa">
+                            <option>Matute Birding Nature Reserve</option>
+                            <option>Sembrando Paz</option>
+                            <option>Cartagena Biotours</option>
+                            <option>Restaurante Ecolele</option>
+                            <option>Transporte Ecodrive</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-5">
+                        <label class="required form-label">Fecha de visita</label>
+                        <input type="date" class="form-control form-control-solid" />
+                    </div>
+
+                    <div class="mb-5">
+                        <label class="required form-label">Calificación</label>
+                        <select class="form-select form-select-solid">
+                            <option value="5">⭐⭐⭐⭐⭐ (5/5)</option>
+                            <option value="4">⭐⭐⭐⭐ (4/5)</option>
+                            <option value="3">⭐⭐⭐ (3/5)</option>
+                            <option value="2">⭐⭐ (2/5)</option>
+                            <option value="1">⭐ (1/5)</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-5">
+                        <label class="required form-label">Reseña</label>
+                        <textarea class="form-control form-control-solid" rows="5"
+                            placeholder="Escribe tu reseña..."></textarea>
+                    </div>
+
+                    <!-- Opción de imagen -->
+                    <div class="mb-5">
+                        <label class="form-label">Subir imagen (opcional)</label>
+                        <input type="file" class="form-control form-control-solid" accept="image/*">
+                    </div>
+
+                    <!-- Opción de video -->
+                    <div class="mb-5">
+                        <label class="form-label">Subir video (opcional)</label>
+                        <input type="file" class="form-control form-control-solid" accept="video/*">
+                    </div>
+
+                    <!-- Link de video -->
+                    <div class="mb-5">
+                        <label class="form-label">O insertar link de video (YouTube, Vimeo...)</label>
+                        <input type="url" class="form-control form-control-solid"
+                            placeholder="https://www.youtube.com/watch?v=...">
+                    </div>
+
+                    <div class="text-center pt-10">
+                        <button type="reset" class="btn btn-light me-3" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="submit" class="btn btn-primary">
+                            <span class="indicator-label">Publicar reseña</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!--end::Modal - Add Review-->
+
+<!--end::Reseñas detalladas-->
+
+											<!--end::More posts-->
+										</div>
+										<!--end::Posts-->
+										<!--begin::Show more feeds-->
+										<div class="d-flex flex-center">
+											<a href="#" class="btn btn-primary fw-bold px-6"
+												id="kt_social_feeds_more_posts_btn">
+												<!--begin::Indicator label-->
+												<span class="indicator-label">Show more</span>
+												<!--end::Indicator label-->
+												<!--begin::Indicator progress-->
+												<span class="indicator-progress">Please wait...
+													<span
+														class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
+												<!--end::Indicator progress-->
+											</a>
+										</div>
+										<!--end::Show more feeds-->
+									</div>
+									<!--end::Content-->
+									<!--end::End sidebar-->
+								</div>
+								<!--end::Social - Feeds-->
+							</div>
+							<!--end::Content-->
+						</div>
+						<!--end::Content wrapper-->
+						<!--begin::Footer-->
+						<div id="kt_app_footer"
+							class="app-footer d-flex flex-column flex-md-row flex-center flex-md-stack py-3">
+							<!--begin::Copyright-->
+							<div class="text-gray-900 order-2 order-md-1">
+								<span class="text-muted fw-semibold me-1">2025&copy;</span>
+								<a href="https://biotours.co/" target="_blank"
+									class="text-gray-800 text-hover-primary">Bioturs App</a>
+							</div>
+							<!--end::Copyright-->
+
+						</div>
+						<!--end::Footer-->
+					</div>
+					<!--end:::Main-->
+				</div>
+				<!--end::Wrapper container-->
+			</div>
+			<!--end::Wrapper-->
+		</div>
+
+	</div>
+
+	<div id="kt_scrolltop" class="scrolltop" data-kt-scrolltop="true">
+		<i class="ki-outline ki-arrow-up"></i>
+	</div>
+	<!-- Botón flotante -->
+	<button id="chatToggleBtn" class="btn rounded-circle shadow" style="position: fixed; bottom: 20px; right: 20px; z-index: 1055; background: #286c3c;">
+		💬
+		</button>
+
+		<!-- Ventana de Chat -->
+		<div id="chatWindow" class="card shadow" style="width: 300px; position: fixed; bottom: 80px; right: 20px; display: none; z-index: 1055;">
+		<div class="card-header text-white d-flex justify-content-between align-items-center" style="background: #286c3c;">
+			<span>Asistente Virtual</span>
+			<button id="closeChat" class="btn btn-sm btn-light">✕</button>
+		</div>
+		<div class="card-body" style="height: 250px; overflow-y: auto;">
+			<div class="text-muted text-center">¡Hola! ¿En qué puedo ayudarte?</div>
+			<!-- Simulación de mensajes -->
+			<div class="mt-3">
+			<div class="text-start mb-2">
+				<div class="bg-light p-2 rounded">¿Cuál es el horario de atención?</div>
+			</div>
+			<div class="text-end mb-2">
+				<div style="background: #286c3c;" class="text-white p-2 rounded">Nuestro horario es de 8 a.m. a 5 p.m.</div>
+			</div>
+			</div>
+		</div>
+		<div class="card-footer p-2">
+			<input type="text" class="form-control" placeholder="Escribe tu mensaje..." disabled>
+		</div>
+		</div>
+	</div>
+	<script>
+		const chatToggleBtn = document.getElementById('chatToggleBtn');
+		const chatWindow = document.getElementById('chatWindow');
+		const closeChat = document.getElementById('closeChat');
+
+		chatToggleBtn.addEventListener('click', () => {
+			chatWindow.style.display = chatWindow.style.display === 'none' ? 'block' : 'none';
+		});
+
+		closeChat.addEventListener('click', () => {
+			chatWindow.style.display = 'none';
+		});
+	</script>
+	<script>var hostUrl = "assets/";</script>
+	<script src="assets/plugins/global/plugins.bundle.js"></script>
+	<script src="assets/js/scripts.bundle.js"></script>
+	<script src="assets/plugins/custom/fslightbox/fslightbox.bundle.js"></script>
+	<script src="assets/plugins/custom/datatables/datatables.bundle.js"></script>
+	<script src="assets/js/custom/pages/social/feeds.js"></script>
+	<script src="assets/js/widgets.bundle.js"></script>
+	<script src="assets/js/custom/widgets.js"></script>
+</body>
+
+</html>

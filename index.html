@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title>Inciar Sesión - Biotours</title>
+	<meta charset="utf-8" />
+	<meta name="description"
+		content="The most advanced Tailwind CSS & Bootstrap 5 Admin Theme with 40 unique prebuilt layouts on Themeforest trusted by 100,000 beginners and professionals. Multi-demo, Dark Mode, RTL support and complete React, Angular, Vue, Asp.Net Core, Rails, Spring, Blazor, Django, Express.js, Node.js, Flask, Symfony & Laravel versions. Grab your copy now and get life-time updates for free." />
+	<meta name="keywords"
+		content="tailwind, tailwindcss, metronic, bootstrap, bootstrap 5, angular, VueJs, React, Asp.Net Core, Rails, Spring, Blazor, Django, Express.js, Node.js, Flask, Symfony & Laravel starter kits, admin themes, web design, figma, web development, free templates, free admin themes, bootstrap theme, bootstrap template, bootstrap dashboard, bootstrap dak mode, bootstrap button, bootstrap datepicker, bootstrap timepicker, fullcalendar, datatables, flaticon" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title"
+		content="Biotours" />
+	<meta property="og:url" content="https://keenthemes.com/metronic" />
+	<meta property="og:site_name" content="Metronic by Keenthemes" />
+	<link rel="canonical" href="http://preview.keenthemes.comauthentication/layouts/creative/sign-in.html" />
+	<link rel="shortcut icon" href="assets/media/logos/favicon.ico" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
+	<link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+	<link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body id="kt_body" class="app-blank bgi-size-cover bgi-attachment-fixed bgi-position-center bgi-no-repeat">
+	<div class="d-flex flex-column flex-root" id="kt_app_root">
+
+		<style>
+			body {
+				background-image: url('assets/media/auth/bg4.jpg');
+			}
+		</style>
+		<div class="d-flex flex-column flex-column-fluid flex-lg-row">
+			<div class="d-flex flex-center w-lg-50 pt-15 pt-lg-0 px-10">
+				<div class="d-flex flex-center flex-lg-start flex-column">
+					<a href="https://biotours.co/" target="_blank" class="mb-7">
+						<img alt="Logo" src="assets/media/logos/logo-biotours-transp.png" />
+					</a>
+					<h2 class="text-white fw-normal m-0">explora, conecta, protege</h2>
+				</div>
+			</div>
+			<div
+				class="d-flex flex-column-fluid flex-lg-row-auto justify-content-center justify-content-lg-end p-12 p-lg-20">
+				<div class="bg-body d-flex flex-column align-items-stretch flex-center rounded-4 w-md-600px p-20">
+					<div class="d-flex flex-center flex-column flex-column-fluid px-lg-10 pb-15 pb-lg-20">
+						<form class="form w-100" novalidate="novalidate" id="kt_sign_in_form"
+							data-kt-redirect-url="./searchActivities.html" action="#">
+							<div class="text-center mb-11">
+								<h1 class="text-gray-900 fw-bolder mb-3">Inicio de sesión</h1>
+							</div>
+							<div class="fv-row mb-8">
+								<input type="text" placeholder="Email" name="email" autocomplete="off"
+									class="form-control bg-transparent" />
+							</div>
+							<div class="fv-row mb-3">
+								<input type="password" placeholder="Contraseña" name="password" autocomplete="off"
+									class="form-control bg-transparent" />
+							</div>
+							<div class="d-flex flex-stack flex-wrap gap-3 fs-base fw-semibold mb-8">
+								<div></div>
+								<a href="#"
+									class="link-primary">¿Olvidaste tu contraseña?</a>
+							</div>
+							<div class="d-grid mb-10">
+								<button type="submit" id="kt_sign_in_submit" class="btn btn-primary">
+									<span class="indicator-label">Inicio de sesión</span>
+									<span class="indicator-progress">Por favor, espere...
+										<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
+								</button>
+							</div>
+							<div class="text-gray-500 text-center fw-semibold fs-6">¿No haces parte todavía de biotours?
+								<a href="authentication/layouts/creative/sign-up.html" class="link-primary"
+									data-bs-toggle="modal" data-bs-target="#kt_modal_create_account">Regístrate</a>
+							</div>
+						</form>
+					</div>
+					<div class="d-flex flex-stack px-lg-10">
+						<div class="d-flex fw-semibold text-primary fs-base gap-5">
+							<a href="#">Términos y condiciones</a>
+							<a href="#">Acerca de biotours</a>
+							<a href="#">Contáctanos</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="kt_modal_create_account" data-bs-backdrop="static" data-bs-keyboard="false"
+		tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog mw-1000px">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h2>Crear nueva cuenta en biotours</h2>
+					<div class="btn btn-sm btn-icon btn-active-color-primary" data-bs-dismiss="modal">
+						<i class="ki-outline ki-cross fs-1"></i>
+					</div>
+				</div>
+				<div class="modal-body scroll-y m-5">
+					<div class="stepper stepper-links d-flex flex-column" id="kt_create_account_stepper">
+						<div class="stepper-nav py-5">
+							<div class="stepper-item current" data-kt-stepper-element="nav">
+								<h3 class="stepper-title">Tipo de usuario</h3>
+							</div>
+							<div class="stepper-item" data-kt-stepper-element="nav">
+								<h3 class="stepper-title">Información de la cuenta</h3>
+							</div>
+							<div class="stepper-item" data-kt-stepper-element="nav">
+								<h3 class="stepper-title">Finalizar</h3>
+							</div>
+						</div>
+						<form class="mx-auto mw-600px w-100 py-10" novalidate="novalidate" id="kt_create_account_form">
+							<div class="current" data-kt-stepper-element="content">
+								<div class="w-100">
+									<div class="pb-10 pb-lg-15">
+										<h2 class="fw-bold d-flex align-items-center text-gray-900">Esoge el tipo de
+											usuario
+											<span class="ms-1" data-bs-toggle="tooltip"
+												title="Elige entre perfil de Persona o Empresa">
+												<i class="ki-outline ki-information-5 text-gray-500 fs-6"></i>
+											</span>
+										</h2>
+										<div class="text-muted fw-semibold fs-6">Si necesitas ayuda, por favor revisa la
+											información de los perfiles en la
+											<a href="#" class="link-primary fw-bold">página de ayuda</a>.
+										</div>
+									</div>
+									<div class="fv-row">
+										<div class="row">
+											<div class="col-lg-6">
+												<input type="radio" class="btn-check" name="account_type"
+													value="personal" checked="checked"
+													id="kt_create_account_form_account_type_personal" />
+												<label
+													class="btn btn-outline btn-outline-dashed btn-active-light-primary p-7 d-flex align-items-center mb-10"
+													for="kt_create_account_form_account_type_personal">
+													<img src="assets/media/icons/icono-personas.png" alt="" width="50px"
+														class="img-fluid mx-5">
+													<span class="d-block fw-semibold text-start">
+														<span
+															class="text-gray-900 fw-bold d-block fs-4 mb-2">Personas</span>
+														<span class="text-muted fw-semibold fs-6">Quieres conocer,
+															conectar y explorar servicios y/o experiencias dentro de la
+															plataforma</span>
+													</span>
+												</label>
+											</div>
+											<div class="col-lg-6">
+												<input type="radio" class="btn-check" name="account_type"
+													value="corporate"
+													id="kt_create_account_form_account_type_corporate" />
+												<label
+													class="btn btn-outline btn-outline-dashed btn-active-light-primary p-7 d-flex align-items-center"
+													for="kt_create_account_form_account_type_corporate">
+													<img src="assets/media/icons/icono-empresas.png" alt="" width="50px"
+														class="img-fluid mx-5">
+													<span class="d-block fw-semibold text-start">
+														<span
+															class="text-gray-900 fw-bold d-block fs-4 mb-2">Empresas</span>
+														<span class="text-muted fw-semibold fs-6">Quiero ofrecer mis
+															servicios / experiencias sostenibles a las Personas de la
+															plataforma</span>
+													</span>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Paso 2: Información de la cuenta -->
+							<div data-kt-stepper-element="content" id="step-account-info">
+								<div class="w-100">
+									<div id="campos_personas">
+										<div class="pb-10 pb-lg-15">
+											<h2 class="fw-bold text-gray-900">Información de la cuenta</h2>
+											<div class="text-muted fw-semibold fs-6">Este será tu perfil dentro de
+												Biotours.
+											</div>
+										</div>
+										<div class="row mb-5">
+											<div class="col-md-6 fv-row">
+												<label class="form-label required">Nombres</label>
+												<input type="text" name="first_name"
+													class="form-control form-control-lg form-control-solid" />
+											</div>
+											<div class="col-md-6 fv-row">
+												<label class="form-label required">Apellidos</label>
+												<input type="text" name="last_name"
+													class="form-control form-control-lg form-control-solid" />
+											</div>
+										</div>
+										<div class="mb-5 fv-row">
+											<label class="form-label required">Email</label>
+											<input type="email" name="email_personas"
+												class="form-control form-control-lg form-control-solid" />
+										</div>
+										<div class="mb-5 fv-row">
+											<label class="form-label required">Contraseña</label>
+											<input type="password" name="password_personas"
+												class="form-control form-control-lg form-control-solid" />
+										</div>
+										<div class="mb-5 fv-row">
+											<label class="form-label">Teléfono</label>
+											<input type="text" name="telefono_personas"
+												class="form-control form-control-lg form-control-solid" />
+										</div>
+										<div class="row mb-5">
+											<div class="col-md-6 fv-row">
+												<label class="form-label">País</label>
+												<input type="text" name="pais_residencia"
+													class="form-control form-control-lg form-control-solid" />
+											</div>
+											<div class="col-md-6 fv-row">
+												<label class="form-label">Ciudad</label>
+												<input type="text" name="ciudad_residencia"
+													class="form-control form-control-lg form-control-solid" />
+											</div>
+										</div>
+										<div class="mb-5 fv-row">
+											<label class="form-label">Tipo de turismo preferido</label>
+											<select name="tipo_turismo_preferido"
+												class="form-select form-select-lg form-select-solid" multiple>
+												<!-- Opciones dinámicas desde catálogo -->
+												<option value="1">Agroturismo</option>
+												<option value="2">Avistamiento de aves</option>
+												<option value="3">Ecoturismo</option>
+												<option value="4">Gastronomía local</option>
+												<option value="5">Senderismo</option>
+												<option value="6">Voluntariado ecológico</option>
+											</select>
+										</div>
+									</div>
+									<div id="campos_empresas" style="display: none;">
+										<div class="pb-10 pb-lg-12">
+											<h2 class="fw-bold text-gray-900">Información de la empresa</h2>
+											<div class="text-muted fw-semibold fs-6">Solo si representas una empresa o
+												prestador de servicios turísticos.</div>
+										</div>
+										<div class="fv-row mb-5">
+											<label class="form-label required">Razón social</label>
+											<input type="text" name="razon_social"
+												class="form-control form-control-lg form-control-solid" />
+										</div>
+										<div class="fv-row mb-5">
+											<label class="form-label">Tipo de proveedor</label>
+											<select name="tipo_proveedor"
+												class="form-select form-select-lg form-select-solid">
+												<option value="natural">Persona natural</option>
+												<option value="juridica">Empresa legalmente constituida</option>
+											</select>
+										</div>
+										<div class="fv-row mb-5">
+											<label class="form-label">Tipo de empresa</label>
+											<select name="tipo_empresa"
+												class="form-select form-select-lg form-select-solid" multiple>
+												<!-- Opciones dinámicas desde catálogo -->
+												<option value="1">Agroturismo</option>
+												<option value="2">Avistamiento de aves</option>
+												<option value="3">Ecoturismo</option>
+												<option value="4">Gastronomía local</option>
+												<option value="5">Hospedaje ecológico</option>
+												<option value="6">Senderismo</option>
+												<option value="7">Transporte ecológico</option>
+												<option value="8">Voluntariado ecológico</option>
+												<option value="9">Otro</option>
+											</select>
+										</div>
+										<div class="fv-row mb-5">
+											<label class="form-label">Nombre del representante legal</label>
+											<input type="text" name="representante_legal"
+												class="form-control form-control-lg form-control-solid" />
+										</div>
+										<div class="fv-row mb-5">
+											<label class="form-label">Identificación</label>
+											<input type="text" name="identificacion"
+												class="form-control form-control-lg form-control-solid" />
+										</div>
+										<div class="row mb-5">
+											<div class="col-md-6 fv-row">
+												<label class="form-label">Teléfono</label>
+												<input type="text" name="telefono_empresa"
+													class="form-control form-control-lg form-control-solid" />
+											</div>
+											<div class="col-md-6 fv-row">
+												<label class="form-label">Email</label>
+												<input type="email" name="email_empresa"
+													class="form-control form-control-lg form-control-solid" />
+											</div>
+										</div>
+										<div class="row mb-5">
+											<div class="col-md-6 fv-row">
+												<label class="form-label">País</label>
+												<input type="text" name="pais_empresa"
+													class="form-control form-control-lg form-control-solid" />
+											</div>
+											<div class="col-md-6 fv-row">
+												<label class="form-label">Ciudad</label>
+												<input type="text" name="ciudad_empresa"
+													class="form-control form-control-lg form-control-solid" />
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+							<!-- Paso 3: Detalles del negocio (se moverá al tercer tab real) -->
+							<div data-kt-stepper-element="content" id="step-final">
+								<div class="w-100">
+									<div class="pb-10 pb-lg-15">
+										<h2 class="fw-bold text-gray-900">Resumen y confirmación</h2>
+										<div class="text-muted fw-semibold fs-6">Verifica que toda la información esté
+											correcta antes de enviar tu solicitud.</div>
+									</div>
+
+									<!-- Resumen dinámico -->
+									<div id="resumen_registro" class="mb-10"></div>
+
+									<!-- Aceptar términos -->
+									<div class="form-check form-check-custom form-check-solid mb-5">
+										<input class="form-check-input" type="checkbox" value="1" id="terminos"
+											required />
+										<label class="form-check-label" for="terminos">
+											He leído y acepto los <a href="#" class="link-primary">términos y condiciones</a>.
+										</label>
+									</div>
+
+									<!-- Mensaje final -->
+									<div class="alert alert-info">
+										<i class="ki-outline ki-information fs-2 me-2"></i>
+										Al hacer clic en “Enviar” se creará tu cuenta en Biotours.
+									</div>
+								</div>
+							</div>
+							<div class="d-flex flex-stack pt-15">
+								<div class="mr-2">
+									<button type="button" class="btn btn-lg btn-light-primary me-3"
+										data-kt-stepper-action="previous">
+										<i class="ki-outline ki-arrow-left fs-4 me-1"></i>Atrás</button>
+								</div>
+								<div>
+									<button type="button" class="btn btn-lg btn-primary me-3"
+										data-kt-stepper-action="submit">
+										<span class="indicator-label">Enviar
+											<i class="ki-outline ki-arrow-right fs-3 ms-2 me-0"></i></span>
+										<span class="indicator-progress">Please wait...
+											<span
+												class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
+									</button>
+									<button type="button" class="btn btn-lg btn-primary"
+										data-kt-stepper-action="next">Continuar
+										<i class="ki-outline ki-arrow-right fs-4 ms-1 me-0"></i></button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>var hostUrl = "assets/";</script>
+	<script src="assets/plugins/global/plugins.bundle.js"></script>
+	<script src="assets/js/scripts.bundle.js"></script>
+	<script src="assets/js/custom/authentication/sign-in/general.js"></script>
+	<script>var hostUrl = "assets/";</script>
+	<script src="assets/plugins/custom/datatables/datatables.bundle.js"></script>
+	<script src="assets/js/widgets.bundle.js"></script>
+	<script src="assets/js/custom/widgets.js"></script>
+	<script src="assets/js/custom/utilities/modals/create-account.js"></script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			const tipoUsuarioRadios = document.querySelectorAll('input[name="account_type"]');
+			const camposPersona = document.getElementById('campos_personas');
+			const camposEmpresa = document.getElementById('campos_empresas');
+
+			function toggleEmpresaStep() {
+				const selected = document.querySelector('input[name="account_type"]:checked').value;
+				if (selected === 'corporate') {
+					camposEmpresa.style.display = 'block';
+					camposPersona.style.display = 'none';
+				} else {
+					camposEmpresa.style.display = 'none';
+					camposPersona.style.display = 'block';
+				}
+			}
+
+			// Asignar evento a cada opción
+			tipoUsuarioRadios.forEach(radio => {
+				radio.addEventListener('change', toggleEmpresaStep);
+			});
+
+			// Ejecutar al inicio
+			toggleEmpresaStep();
+		});
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			const resumenContainer = document.getElementById('resumen_registro');
+			const stepperNextButtons = document.querySelectorAll('[data-kt-stepper-action="next"]');
+
+			function generarResumen() {
+				const tipoUsuario = document.querySelector('input[name="account_type"]:checked').value;
+				let resumenHTML = `<p><strong>Tipo de usuario:</strong> ${tipoUsuario === 'personal' ? 'Persona' : 'Empresa'}</p>`;
+
+				if (tipoUsuario === 'personal') {
+					const nombre = document.querySelector('input[name="first_name"]').value;
+					const apellido = document.querySelector('input[name="last_name"]').value;
+					const email = document.querySelector('input[name="email_personas"]').value;
+					const ciudad = document.querySelector('input[name="ciudad_residencia"]').value;
+					const pais = document.querySelector('input[name="pais_residencia"]').value;
+
+					resumenHTML += `
+					<p><strong>Nombre:</strong> ${nombre} ${apellido}</p>
+					<p><strong>Email:</strong> ${email}</p>
+					<p><strong>Ciudad:</strong> ${ciudad}</p>
+					<p><strong>País:</strong> ${pais}</p>
+				`;
+				} else {
+					const razon = document.querySelector('input[name="razon_social"]').value;
+					const representante = document.querySelector('input[name="representante_legal"]').value;
+					const tipo = document.querySelector('select[name="tipo_proveedor"]').value;
+					const ciudad = document.querySelector('input[name="ciudad_empresa"]').value;
+					const pais = document.querySelector('input[name="pais_empresa"]').value;
+					const email = document.querySelector('input[name="email_empresa"]').value;
+
+					resumenHTML += `
+					<p><strong>Razón social:</strong> ${razon}</p>
+					<p><strong>Representante legal:</strong> ${representante}</p>
+					<p><strong>Tipo de proveedor:</strong> ${tipo === 'natural' ? 'Persona natural' : 'Empresa jurídica'}</p>
+					<p><strong>Ciudad:</strong> ${ciudad}</p>
+					<p><strong>País:</strong> ${pais}</p>
+					<p><strong>Email de contacto:</strong> ${email}</p>
+				`;
+				}
+
+				resumenContainer.innerHTML = resumenHTML;
+			}
+
+			// Ejecutar solo cuando se pasa al último paso
+			stepperNextButtons.forEach(btn => {
+				btn.addEventListener('click', () => {
+					setTimeout(() => {
+						const finalStep = document.querySelector('#step-final');
+						if (finalStep && window.getComputedStyle(finalStep).display !== 'none') {
+							generarResumen();
+						}
+					}, 500); // Delay para esperar el cambio de step
+				});
+			});
+		});
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			const checkbox = document.getElementById('terminos');
+			const submitBtn = document.querySelector('[data-kt-stepper-action="submit"]');
+
+			function toggleSubmitButton() {
+				submitBtn.disabled = !checkbox.checked;
+			}
+
+			// Desactivar al cargar
+			toggleSubmitButton();
+
+			// Escuchar cambios en el checkbox
+			checkbox.addEventListener('change', toggleSubmitButton);
+		});
+	</script>
+</body>
+
+</html>
